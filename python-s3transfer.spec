@@ -1,7 +1,7 @@
 %define module s3transfer
 
 Name:		python-s3transfer
-Version:	0.17.0
+Version:	0.17.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/s/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Summary:	An Amazon S3 Transfer Manager
@@ -19,5 +19,5 @@ BuildRequires:	python%{pyver}dist(wheel)
 An Amazon S3 Transfer Manager
 
 %files
-%{py_sitedir}/%{module}
-%{py_sitedir}/%{module}-%{version}.dist-info
+%{python_sitelib}/%{module}
+%{python_sitelib}/%{module}-%{version}.dist-info
